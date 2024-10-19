@@ -1,0 +1,17 @@
+<div class="modal">
+  <div>
+    <div class="confirmation-text">
+      {{ message }}
+    </div>
+    <div class="duration-input">
+      <label>Enter duration (milliseconds). Should be greater than 10.</label>
+      <input type="number" [class.invalid]="!isButtonValid" [(ngModel)]="duration">
+    </div>
+    <div class="button-container">
+      <button class="button-start" (click)="OnClick()" [disabled]="!isButtonValid">
+        Start New Game
+      </button>
+    </div>
+  </div>
+
+</div>

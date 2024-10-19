@@ -1,0 +1,5 @@
+<div class="game">
+  <ng-container *ngFor="let block of blocks">
+    <app-block [status]="block.status" (clickBlock)="endRound(true)"></app-block>
+  </ng-container>
+</div>

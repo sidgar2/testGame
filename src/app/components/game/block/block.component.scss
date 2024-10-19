@@ -1,0 +1,25 @@
+.block {
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  margin: 5px;
+
+  &.pending {
+    background: #2ba0ff;
+    border: 1px solid lightblue;
+  }
+
+  &.win {
+    background: #438c19;
+    border: 1px solid lightgreen;
+  }
+
+  &.lose {
+    background: #ff4242;
+    border: 1px solid indianred;
+  }
+
+  &.current {
+    background: #ffff57;
+    border: 1px solid lightyellow;
+  }
+}
